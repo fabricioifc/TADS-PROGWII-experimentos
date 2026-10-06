@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horta Viva — Orgânicos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Cabeçalho (como na atividade 1) -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="#" class="logo">🌱 Horta<span>Viva</span></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#vantagens">Por que nós?</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="botao botao-pequeno">🧺 Minha cesta</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Banner em duas colunas (como na atividade 4) -->
+    <section class="hero">
+      <div class="container hero-conteudo">
+        <div class="hero-texto">
+          <p class="chamada">Entrega toda sexta-feira</p>
+          <h1>Orgânicos colhidos no dia, direto do produtor</h1>
+          <p>Monte sua cesta com frutas, verduras e legumes de agricultores familiares da região.</p>
+          <div class="botoes">
+            <a href="#produtos" class="botao">Ver produtos</a>
+            <a href="#contato" class="botao botao-contorno">Fale conosco</a>
+          </div>
+        </div>
+        <img src="img/cesta.svg" alt="Ilustração de uma cesta com tomate, laranja e pepino" class="hero-imagem">
+      </div>
+    </section>
+
+    <!-- 3. Vantagens: três itens lado a lado (como na atividade 3) -->
+    <section id="vantagens" class="vantagens">
+      <div class="container vantagens-lista">
+        <article class="vantagem">
+          <p class="icone">🚜</p>
+          <h3>Produtor local</h3>
+          <p>Tudo vem de sítios a menos de 50 km.</p>
+        </article>
+        <article class="vantagem">
+          <p class="icone">🌿</p>
+          <h3>Sem agrotóxicos</h3>
+          <p>Produção certificada como orgânica.</p>
+        </article>
+        <article class="vantagem">
+          <p class="icone">🚚</p>
+          <h3>Frete grátis</h3>
+          <p>Em pedidos acima de R$ 80,00.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. Produtos: cards com flex-wrap (como na atividade 2) -->
+    <section id="produtos" class="produtos">
+      <div class="container">
+        <h2 class="titulo-secao">Produtos da semana</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="img/tomate.svg" alt="Tomate">
+            <div class="card-info">
+              <h3>Tomate</h3>
+              <p class="unidade">bandeja 500 g</p>
+              <div class="card-compra">
+                <p class="preco">R$ 7,90</p>
+                <a href="#" class="botao-mais" aria-label="Adicionar tomate">+</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/alface.svg" alt="Alface">
+            <div class="card-info">
+              <h3>Alface crespa</h3>
+              <p class="unidade">unidade</p>
+              <div class="card-compra">
+                <p class="preco">R$ 3,50</p>
+                <a href="#" class="botao-mais" aria-label="Adicionar alface">+</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/cenoura.svg" alt="Cenoura">
+            <div class="card-info">
+              <h3>Cenoura</h3>
+              <p class="unidade">maço 1 kg</p>
+              <div class="card-compra">
+                <p class="preco">R$ 6,00</p>
+                <a href="#" class="botao-mais" aria-label="Adicionar cenoura">+</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/morango.svg" alt="Morango">
+            <div class="card-info">
+              <h3>Morango</h3>
+              <p class="unidade">caixa 300 g</p>
+              <div class="card-compra">
+                <p class="preco">R$ 12,00</p>
+                <a href="#" class="botao-mais" aria-label="Adicionar morango">+</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Newsletter: formulário em linha -->
+    <section class="newsletter">
+      <div class="container newsletter-conteudo">
+        <div>
+          <h2>Receba a lista da semana</h2>
+          <p>Avisamos por e-mail quais produtos chegaram.</p>
+        </div>
+        <form class="form-linha" action="#" method="post">
+          <label for="email" class="oculto">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+          <button type="submit" class="botao">Assinar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. Rodapé em colunas (como na atividade 5) -->
+  <footer id="contato" class="rodape">
+    <div class="container rodape-colunas">
+      <section class="coluna-marca">
+        <p class="logo">🌱 Horta<span>Viva</span></p>
+        <p>Cooperativa de agricultores familiares do Vale do Rio do Peixe.</p>
+      </section>
+      <section>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#vantagens">Por que nós?</a></li>
+          <li><a href="#">Seja um produtor</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Contato</h4>
+        <address>
+          Feira do Produtor, box 12<br>
+          Videira/SC<br>
+          (49) 98888-0000
+        </address>
+      </section>
+    </div>
+    <p class="copy">&copy; 2026 Horta Viva · Atividade de HTML e CSS</p>
+  </footer>
+
+</body>
+</html>
